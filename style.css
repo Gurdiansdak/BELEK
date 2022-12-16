@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    height: 100vh;
+}
+header{
+    background-color: #0F0F0F;
+    height: 10%;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #969696;
+    text-decoration: none;
+}
+header .container div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    background-image: url(./img/Rectangle\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+}
+main div{
+    width: 320px;
+    height: 320px;
+    border: 4px solid white;
+}
+main div p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-top: 2px solid white;
+    margin-top: 10px;
+    padding-top: 8px;
+}
+main div, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main > p{
+    width: 50%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center; 
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 80px;
+}
+.season{
+    background-color: black;
+    color: white;
+}
+.top{
+    height: 70vh;
+    display: flex;
+}
+.top .left{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 80px;
+}
+.top .right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 100px;
+    background-image: url(./img/Rectangle\ 8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.top .right hr{
+    margin: 30px 0;
+}
+.top .right h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.top .right button{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: none;
+    border: 1px solid white;
+    padding: 5px 20px;
+}
+.clocks{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.clock div{
+    background-color: #191B1C;
+    padding: 55px 22px;
+    width: 100%;
+}
+.clock div img{
+    width: 150px;
+}
+.bottom{
+    height: 70vh;
+    display: flex;
+}
+.bottom .left{
+    background-image: url(./img/Rectangle\ 9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 45%;
+}
+.bottom .right{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom .right p{
+    width: 470px;
+    text-align: center;
+}
+.bottom .right hr{
+    margin: 50px;
+}
+.bottom .right button{
+    margin-top: 70px;
+}
+.new{
+    background-color: #000000;
+    color: white;
+}
+.new .container .clocks{
+    margin-bottom: 50px;
+}
+.new .container, .brands .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.new .container hr, .brands .container hr{
+    margin: 40px 0;
+}
+.new .container h1{
+    margin-top: 120px;
+}
+.bottom .right button{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: none;
+    border: 1px solid white;
+    padding: 5px 20px;
+}
+.season h1, .new .container > h1, .brands .container > h1{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.season p:nth-of-type(2), .new p:nth-of-type(2){
+    font-family: 'Playfair Display', serif;
+}
+.season p:nth-last-of-type(1), .new p:nth-last-of-type(1), .footer h2{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+}
+.brands{
+    background-color: #0F0F0F;
+    color: white;
+}
+.brands .container h1{
+    margin-top: 60px;
+}
+.brands .container .clocks{
+    margin-bottom: 80px;
+}
+.footer{
+    background-image: url(./img/Rectangle\ 15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 400px;
+    
+}
+.footer .container{
+    display: flex;
+    padding-top: 80px;
+}
+.magazine, .test, .soft{
+    width: 60%;
+}
+.test a{
+    background-color: #0F0F0F;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+.test div{
+    margin-top: 50px;
+}
+.test{
+    padding: 0 20px;
+}
+.magazine p, .soft > p{
+    padding: 40px 0;
+}
+.soft input[type="email"]{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 20px;
+}
+.soft input[type="submit"]{
+    background-color: #0F0F0F;
+    color: white;
+}
+.soft input{
+    height: 40px;
+    width: 150px;
+}
+.top .right button, .bottom .right p, .bottom .right button, .magazine p, .soft p, .test a, .prove{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.prove{
+    background-color: #0F0F0F;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.prove p{
+    margin-left: 15%;
+}
+
+
+header .container > a{
+    display: none;
+}
+
+
+
+@media (max-width: 576px) {
+    header .container div{
+        display: none;
+    }
+    header .container > a{
+        display: flex;
+        align-items: center;
+    }
+    .container{
+        width: 90%;
+    }
+    main > p{
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .top, .bottom{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .clocks{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .left{
+        width: 100%;
+    }
+    .clock{
+        margin-bottom: 30px;
+    }
+    .top{
+        padding: 40px 0;
+    }
+    .top .left{
+        width: 100%;
+    }
+    .top hr{
+        margin: 30px 0;
+    }
+    .top .right{
+        width: 100%;
+        height: 70vh;
+    }
+    .bottom .left{
+        width: 100%;
+        height: 70vh;
+        order: 1;
+    }
+    .bottom .right{
+        width: 100%;
+        height: 70vh;
+    }
+    .bottom .right p{
+        width: 80%;
+    }
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px 0;
+    }
+    .footer{
+        background-image: url(./img/Rectangle\ 15.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        height: fit-content;
+    }
+    .test{
+        width: 80%;
+        padding: 0;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .magazine{
+        width: 80%;
+    }
+    .soft{
+        width: 80%;
+    }
+    
+    
+}
+
+
+@media (min-width:577px) and (max-width: 844px){
+    header .container div{
+        display: none;
+    }
+    header .container > a{
+        display: flex;
+        align-items: center;
+    }
+    .container{
+        width: 90%;
+    }
+    main > p{
+        margin: 30px 0;
+    }
+    main div{
+        margin-top: 30px;
+    }
+    .clocks{
+        flex-wrap: wrap;
+    }
+    .test {
+       width: 600px; 
+    }
+    .top .left{
+        display: none;
+    }
+    .top .right{
+        width: 50%;
+    }
+    .bottom .left{
+        background-image: url(./img/Rectangle\ 9.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+    }
+    .bottom .right{
+        width: 50%;
+        margin-top: -275px;
+    }
+    .bottom .right p{
+        width: 375px;
+    }
+
+}
